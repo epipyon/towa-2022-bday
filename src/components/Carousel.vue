@@ -1,7 +1,7 @@
 <template>
   <div id="myCarousel" class="carousel slide pb-4" data-bs-ride="false">
 
-    <div class="carousel-inner rounded-4 pb-1 pt-1">
+    <div class="carousel-inner rounded-4 pb-1 pt-1 unselectable">
 
       <div class="carousel-item active img-fluid">
         <img src="../assets/submissions/01-Requiem.jpeg" class="d-block w-100" alt="...">
@@ -312,7 +312,7 @@
       <div class="carousel-item img-fluid">
         <img src="../assets/submissions/35-AshExia.jpeg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>{{ $t('from_en') }}AshExia{{ $t('from_jp') }}</h5>
+          <h5><b><a target='_blank' href="https://tokoyamiminiproject.github.io/TokoyamiTowaMiniBdayProject2022/">{{ $t('from_en') }}AshExia{{ $t('from_jp') }} <Icon icon="eva:external-link-fill" :inline="true" /></a></b></h5>
           <p>{{ $t('desc.35') }}</p>
           <p><span style="opacity: 66%; font-size: small; margin-bottom: -2vh">35/{{ $t('desc.max') }}</span></p>
         </div>
@@ -351,17 +351,34 @@
 </template>
 
 <script>
+import { Icon } from '@iconify/vue';
+
 export default {
-  name: "Carousel"
+  name: "Carousel",
+  components: {
+    Icon
+  },
 }
 </script>
 
 <style scoped>
+.unselectable {
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .carousel-item img {
   object-fit: contain;
   object-position: center;
   overflow: hidden;
   height: 90vh;
+}
+
+.carousel-caption a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .carousel-inner {

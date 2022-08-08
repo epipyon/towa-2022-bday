@@ -15,8 +15,8 @@
                 <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Change Language / 言語を変更する">{{ $t('navbar.lang') }} <Icon icon="iconoir:language" :inline="true" /></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item unselectable" @click="changeLang('en')">{{ $t('navbar.en') }}</a></li>
-                <li><a class="dropdown-item unselectable" @click="changeLang('jp')">{{ $t('navbar.jp') }}</a></li>
+                <li><a class="dropdown-item unselectable" @click="changeLang('en')">English</a></li>
+                <li><a class="dropdown-item unselectable" @click="changeLang('jp')">日本語</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -100,7 +100,7 @@
             <li>Lime</li>
             <li><a target='_blank' href="https://twitter.com/Silvers35054612">Silverstar <Icon icon="akar-icons:twitter-fill" :inline="true" /></a></li>
             <li>mattscout007</li>
-            <li><a target='_blank' href="https://twitter.com/ExiaAsh">AshExia <Icon icon="akar-icons:twitter-fill" :inline="true" /></a></li>
+            <li><a target='_blank' href="https://tokoyamiminiproject.github.io/TokoyamiTowaMiniBdayProject2022/"><b>AshExia <Icon icon="eva:external-link-fill" :inline="true" /></b></a></li>
             <li>Partyman1099</li>
             <li>Loy-kun</li>
           </ul>
