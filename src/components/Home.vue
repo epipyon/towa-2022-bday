@@ -12,7 +12,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle unselectable" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Change Language / 言語を変更する">{{ $t('navbar.lang') }} <Icon icon="iconoir:language" /></span>
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Change Language / 言語を変更する">{{ $t('navbar.lang') }} <Icon icon="iconoir:language" :inline="true" /></span>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item unselectable" @click="changeLang('en')">{{ $t('navbar.en') }}</a></li>
@@ -138,7 +138,7 @@
         </div>
       </div>
       <div class="credits-container">
-        <div class="credits-column credit-title">{{ $t('title.site') }}</div>
+        <div class="credits-column credit-title"><a target="_blank" href="https://github.com/Epikkyu/towa-2022-bday">{{ $t('title.site') }} <Icon icon="akar-icons:github-fill" :inline="true" /></a></div>
         <div class="credits-column">
           <ul>
             <li><a target='_blank' href="https://twitter.com/Epikkyu">Epikkyu <Icon icon="akar-icons:twitter-fill" :inline="true" /></a></li>
