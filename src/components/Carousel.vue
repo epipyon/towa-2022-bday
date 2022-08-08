@@ -1,9 +1,9 @@
 <template>
-  <div id="myCarousel" class="carousel slide pb-4" data-bs-ride="false">
+  <div id="myCarousel" class="carousel slide pb-4" data-bs-pause="hover" data-bs-ride="carousel">
 
-    <div class="carousel-inner rounded-4 pb-1 pt-1 unselectable">
+    <div class="carousel-inner rounded-4 p-1 unselectable">
 
-      <div class="carousel-item active img-fluid">
+      <div class="carousel-item active img-fluid"  data-bs-interval="5000">
         <img src="../assets/submissions/01-Requiem.jpeg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>{{ $t('from_en') }}Requiem{{ $t('from_jp') }}</h5>
